@@ -1,1 +1,4 @@
-<h1>{{ auth()->user()->name }}</h1>
+@extends('student.layouts.app')
+@section('content')
+ 
+@endsection

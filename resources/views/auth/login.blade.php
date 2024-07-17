@@ -5,7 +5,7 @@
 
 <head>
     <!--  Title -->
-    <title>Mordenize</title>
+    <title>SMKN 1 KRAKSAAN</title>
     <!--  Required Meta Tag -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Favicon -->
     <link rel="shortcut icon" type="image/png"
-        href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" />
+        href="{{ asset('smk.png') }}" />
     <!-- Core Css -->
     <link id="themeColors" rel="stylesheet" href="../../assets/dist/css/style.min.css" />
 </head>
@@ -25,13 +25,13 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico"
-            alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('smk.png') }}"
+            alt="loader" class="lds-ripple img-fluid" style="width: 90px" />
     </div>
     <!-- Preloader -->
     <div class="preloader">
-        <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico"
-            alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('smk.png') }}"
+            alt="loader" class="lds-ripple img-fluid" style="width: 90px" />
     </div>
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full"
@@ -43,9 +43,9 @@
                     <div class="col-md-8 col-lg-6 col-xxl-3">
                         <div class="card mb-0">
                             <div class="card-body">
-                                <a href="index-2.html" class="text-nowrap logo-img text-center d-block mb-5 w-100">
-                                    <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/dark-logo.svg"
-                                        width="180" alt="">
+                                <a href="/" class="text-nowrap logo-img text-center d-block mb-5 w-100">
+                                    <img src="{{ asset('smk.png') }}"
+                                        width="100" alt="">
                                 </a>
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf
@@ -98,11 +98,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="">
-                                                    @if (Route::has('password.request'))
+                                                    {{-- @if (Route::has('password.request'))
                                                         <a class="btn btn-link" href="{{ route('password.request') }}">
                                                             {{ __('Lupa password ?') }}
                                                         </a>
-                                                    @endif
+                                                    @endif --}}
                                                 </div>
                                             </div>
                                         </div>

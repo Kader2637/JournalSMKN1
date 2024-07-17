@@ -1,1 +1,1 @@
-<h1>{{ auth()->user()->name }}</h1>
+@extends('admin.layouts.app')
